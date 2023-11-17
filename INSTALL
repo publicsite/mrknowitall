@@ -1,0 +1,18 @@
+Install a java compiler and a run time environment.
+Install a certian free relational database management system.
+Install a java servlet container.
+Get a java database connectivity API and a servlet API.
+Compile the program (example given for linux in "compile" file).
+
+Create a database with the free relational database management system called mrknowitall and inside the database
+create the tables; t_lines, t_patterns and t_responses. (An example is given below)
+
+	create table t_lines ( flinenum INT NOT NULL AUTO_INCREMENT PRIMARY KEY, flines VARBINARY(255) );
+	create table t_patterns ( fpatternnum INT NOT NULL AUTO_INCREMENT PRIMARY KEY, fpatterns VARBINARY(255) );
+	create table t_responses ( fresponsenum INT NOT NULL AUTO_INCREMENT PRIMARY KEY, fresponses VARBINARY(255) );
+
+Make sure the servlet API and java database connectivity API is in the servlet container's classpath.
+Place compiled classes and mrknowitall.html in the servlet container.
+Run the servlet.
+
+Note: May need to create an xml file, an example is given in the file "web.xml".

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+  
+<Context>
+ <Resource name="jdbc/mrknowitall" 
+              auth="Container"
+              type="javax.sql.DataSource" 
+              username="root" 
+              password="YourDatabasePassword"
+              driverClassName="com.RelationDatabaseManagementSystemName.JavaDatabaseConnectivityAPI.Driver"
+              url="JavaDatabaseConnectivityAPI:RelationDatabaseManagementSystemName://localhost:3306/mrknowitall"
+              maxActive="15" 
+              maxIdle="3"/>
+</Context>
+
+<servlet>
+        <servlet-name>mrknowitall</servlet-name>
+        <servlet-class>mrknowitall</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>mrknowitall</servlet-name>
+        <url-pattern>/mrknowitall</url-pattern>
+</servlet-mapping>
+
+</web-app>
